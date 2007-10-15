@@ -1,4 +1,4 @@
-category: Utilities
+category: Utils
 requires: cygwin bash bzip2 coreutils gzip
 sdesc: "Debian utilities"
 ldesc: "This package provides a number of small utilities which are used 
