@@ -5,21 +5,21 @@ primarily by the installation scripts of Debian packages, although you
 may use them directly.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.7.0-43
+  libgcc1-4.3.2-2
   bash
   bzip2
   coreutils
   gzip
 
 Build requirements:
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.6-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
+  binutils-20080624-2
+  cygport-0.9.5-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -31,15 +31,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack debianutils-2.23.1-X-src.tar.bz2
+  unpack debianutils-2.31-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./debianutils-2.23.1-X.cygport all
+  cygport ./debianutils-2.31-X.cygport all
 
 This will create:
-  /usr/src/debianutils-2.23.1-X-src.tar.bz2
-  /usr/src/debianutils-2.23.1-X.tar.bz2
+  /usr/src/debianutils-2.31-X-src.tar.bz2
+  /usr/src/debianutils-2.31-X.tar.bz2
 
 -------------------------------------------
 
@@ -48,7 +48,6 @@ Files included in the binary package:
   /usr/bin/run-parts.exe
   /usr/bin/tempfile.exe
   /usr/sbin/savelog
-  /usr/share/doc/Cygwin/debianutils-2.23.1.README
   /usr/share/man/fr/man1/tempfile.1.gz
   /usr/share/man/fr/man8/run-parts.8.gz
   /usr/share/man/fr/man8/savelog.8.gz
@@ -60,8 +59,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 2.23.1-1 -----
-Initial release for Cygwin.
+----- version 2.31-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

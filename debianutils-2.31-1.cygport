@@ -1,7 +1,7 @@
 DESCRIPTION="Debian system utilities"
-HOMEPAGE="http://packages.debian.org/unstable/source/debianutils"
+HOMEPAGE="http://packages.debian.org/source/sid/debianutils"
 SRC_URI="http://ftp.debian.org/debian/pool/main/${PN:0:1}/${PN}/${PN}_${PV}.tar.gz"
-PATCH_URI="mirror://portage/sys-apps/${PN}/files/${PN}-2.14.1-no-bs-namespace.patch"
+PATCH_URI="mirror://portage/sys-apps/${PN}/files/${PN}-2.31-no-bs-namespace.patch"
 
 src_install() {
 	dobin ${B}/{run-parts,tempfile}.exe
