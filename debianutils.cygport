@@ -1,0 +1,20 @@
+NAME="debianutils"
+VERSION=4.4
+RELEASE=1
+CATEGORY="Utils"
+SUMMARY="Debian utilities"
+DESCRIPTION="This package provides a number of small utilities which are used
+primarily by the installation scripts of Debian packages, although you may use
+them directly."
+REQUIRES="bzip2 coreutils gzip"
+HOMEPAGE="http://packages.debian.org/source/sid/debianutils"
+SRC_URI="http://ftp.debian.org/debian/pool/main/${NAME:0:1}/${NAME}/${NAME}_${VERSION}.tar.gz"
+PATCH_URI="mirror://portage/sys-apps/${NAME}/files/${NAME}-3.4.2-no-bs-namespace.patch"
+
+src_install() {
+	dobin ${B}/{run-parts,tempfile}.exe
+	dosbin ${S}/savelog
+	doman ${S}/tempfile.1 ${S}/{run-parts,savelog}.8
+	doman --lang=fr ${S}/po4a/fr/tempfile.1 ${S}/po4a/fr/{run-parts,savelog}.8
+	doman --lang=sl ${S}/po4a/sl/tempfile.1 ${S}/po4a/sl/{run-parts,savelog}.8
+}
